@@ -1,0 +1,592 @@
+/* COLOR
+C1 : #06A2AE;
+C2 : #18939B;
+C3 : #69C2CA;
+C4 : #6A6A6A;
+C5 : #969696;
+C6 : #E6E6E6;
+C7 : #FFFFFF => white;
+C8 : #ff9f97; 1er
+C8 : #69c2ca; Nous
+
+
+
+#D5FADB
+#FED1CB
+*/
+
+
+
+html{
+	font-family: "Arial", "Helvetica";
+	background-image: url(../image/fond.jpg);
+}
+
+
+
+/*barre de navigation*/
+
+#main_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #06A2AE;
+}
+.bouton1 {
+	float: right;
+	cursor: default;
+}
+.bouton1:first-child {
+	float: left;
+}
+.bouton1 a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+}
+#img-profil {
+	padding: 5px 0px;
+}
+.tombant {
+	display: inline-block;
+	cursor: pointer;
+}
+.tombant ul {
+	display: none;
+	position: absolute;
+	min-width: 140px;
+	box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.3);
+	z-index: 1;
+}
+.bouton2 a {
+	display: block;
+	color: black;
+	text-align: left;
+	background-color: #69C2CA;
+}
+.bouton2 a:hover {
+	background-color: #6A6A6A;
+	color: white;
+	transition-duration: 0.3s;
+}
+.tombant:hover ul {
+	display: block;
+}
+
+header {
+	margin-bottom: 50px;
+}
+#img-profil img {
+	width: 40px;
+	height: 40px;
+	border: 1px black solid;
+	border-radius: 50%;
+}
+#logo{
+	padding: 0px;
+	padding-top: 1px;
+}
+#logo img {
+	height: 50px;	
+}
+.tombant img {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+
+
+/*page du compte*/
+.divScore{
+	background-color: #969696;
+	color: white;
+	cursor: pointer;
+}
+.divScore:hover{
+	color: black;
+	background-color: #69c2ca;
+}
+#first{
+	color: #ff9f97;
+}
+#first:hover{
+	color: black;
+	background-color: #ff9f97;
+}
+.me{
+	color: #D5FADB;
+}
+.me:hover{
+	color: black;
+	background-color: #D5FADB;
+}
+
+
+#score {
+	float: left;
+	border: 5px solid #6A6A6A;
+	width: 20%;
+	height: 700px;
+	text-align: center;
+	background-color: #E6E6E6;
+}
+
+main{
+	margin-top: 10%;
+	width: 70%;
+	float: right;
+}
+
+#jouer, #importer{
+	width: 400px;
+	height: 400px;
+	padding: 0px;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	border: 5px #06A2AE solid;
+	background-color: #69C2CA;
+	font-size: 3em;
+}
+#Spas{
+	border: none;
+	width: 25%;
+	padding: 0px;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+#jouer a, #importer a {
+	text-decoration: none;
+	color: black;
+}
+
+#jouer:hover a, #importer:hover a {
+	color: white;
+	transition-duration: 0.3s;
+}
+
+#jouer:hover, #importer:hover {
+	border-color: #6A6A6A;
+	background-color: #969696;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+
+
+/*page du jeu*/
+#retour{
+	width: 80px;
+	height: 20px;
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	text-align: center;
+	border: 2px #06A2AE solid;
+	background-color: #69C2CA;
+	border-radius: 10px;
+}
+#retour:hover {
+	border-color: #6A6A6A;
+	background-color: #969696;
+	color: white;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+#retour a{
+	text-decoration: none;
+	color: black;
+}
+
+#tour{
+	width: 150px;
+	height: 100px;
+	margin-top: 2%;
+	margin-left: 2%;
+	border: none;
+}
+
+
+#cadreJeu{
+	width: 500px;
+	height: 400px;
+	text-align: center;
+	margin-top: 10%;
+	margin-left: 37.5%;
+	background-color: #69C2CA;
+	border-radius: 10px;
+}
+#photo{
+	height: 320px;
+	width: 240px;
+	background-color: white;
+	border-radius: 10px;
+}
+#divBouton{
+	width: 400px;
+	height: 50px;
+	margin: auto;
+	background-color: #E6E6E6;
+	border-radius: 10px;
+}
+.boutonJeu{
+	border-radius: 10px;
+	margin-left: 120px;
+	margin-right: 120px;
+	height: 50px;
+	cursor: pointer;
+}
+#barre{
+	width: 500px;
+	margin-top: 50px;
+	margin-left: 37.5%;
+	visibility: hidden;
+}
+#barre div{
+	margin: 0px;
+	display: table-cell;
+	width: 50px;
+	height: 20px;
+	background-color: #E6E6E6;
+	visibility: visible;
+}
+
+
+/*page d'importation*/
+#supprimerEtu{
+	width: 16%;
+	height: 100px;
+	margin-top: 20px;
+	margin-right: 10%;
+	float: right;
+	border-radius: 10px;
+	background-color: white;
+}
+.vide{
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+#supprimerEtu input, #supprimerEtu select{
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 5px;
+	background-color: #E6E6E6;
+}
+#supprimerEtu label {
+	margin: 5px;
+}
+#boutonSupp{
+	float: right;
+	margin-right: 20px;
+	margin-top: -45px;
+	float: right;
+	height: 30px;
+	border-radius: 10px;
+}
+#import {
+	width: 55%;
+	height: 100px;
+	margin-top: 20px;
+	margin-left: 10%;
+	display: inline-block;
+	border-radius: 10px;
+	background-color: white;
+}
+#import input, #import select{
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 5px;
+	background-color: #E6E6E6;
+}
+#import label {
+	margin: 5px;
+}
+#inputFile{
+	float: left;
+	margin-top: 20px;
+}
+#boutonImport{
+	float: right;
+	margin-top: 25px;
+	margin-right: 50px;
+	height: 30px;
+	border-radius: 10px;
+}
+#importPhoto {
+	width: 75%;
+	height: 50px;
+	display: inline-block;
+	border: 2px #6A6A6A dotted;
+	border-radius: 10px;
+	color: #6A6A6A;
+	text-align: center;
+}
+#change{
+	text-align: center;
+	cursor: pointer;
+}
+#show {
+	margin: auto;
+	width: 80%;
+	height: 600px;
+	overflow:scroll;
+	border: 1px solid;
+	overflow-x: hidden;
+	background-color: white;
+}
+.photoEtu {
+	display: inline-block;
+	border: 1px black solid;
+	margin: 10px;
+	width: 8%;
+}
+.photoEtu img {
+	width: 100%;
+
+}
+.photoEtu p {
+	text-align: center;
+	font-size: 0.8em;
+}
+/*page d'upload*/
+#uploadDiv{
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	text-align: center;
+	padding: 50px;
+	top: 10%;
+	left: 37.5%;
+	background-color: #69C2CA;
+	border-radius: 10px;
+}
+
+
+/*page de connexion ou d'inscription*/
+
+div {
+	border: 1px black solid;
+	padding: 7px;
+	margin: 7px;
+}
+#titre{
+	display: inline;
+	position: relative;
+	height: 80px;
+	left: 150px;
+	top: 60px;
+}
+h2 {
+	padding: 0px 0px 5px 10px;
+	margin: 0px;
+	color: white;
+}
+.champs {
+	border-radius: 10px;
+	background-color: white;
+}
+.champs input {
+	float: right;
+	border-radius: 5px;
+	background-color: #E6E6E6;
+}
+#connexion .champs {
+	width: 300px;
+}
+#inscription .champs {
+	width: 400px;
+}
+#connexion {
+	width: 325px;
+	padding: 10px;
+	float: right;
+	margin-top: 40px;
+	margin-right: 40px;
+	border-radius: 10px;
+	background-color: #06A2AE;
+}
+#inscription {
+	width: 430px;
+	height: 320px;
+	padding: 10px;
+	margin: auto;
+	margin-top: 12%;
+	border-radius: 10px;
+	background-color: #06A2AE;
+}
+.boutonInput {
+	margin: auto;
+	border: none;
+}
+.boutonInput input {
+	float: right;
+	margin-right: 10px;
+}
+
+
+/*final inscription*/
+
+#final{
+	width: 400px;
+	height: 350px;
+	padding: 10px;
+	margin: auto;
+	margin-top: 15%;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #06A2AE;
+	color: white;
+}
+.finalChamps{
+	max-width: 250px;
+	margin: auto;
+	margin-top: 10px;
+	background-color: white;
+	color: black;
+}
+#boutonFinalInscription{
+	margin-top: 15px;
+}
+
+/*paramètres*/
+
+#divParametre{
+	margin-top: 15%;
+	border: none;
+}
+
+#modifier, #ajouter, #supprimer{
+	margin-left: 120px;
+	margin-right: 120px;
+	display: inline-block;
+	background-color: #06A2AE;
+}
+#supprimer{
+	color: white;
+	margin-right: 120px;
+}
+#confirmSupp{
+	width: 30%;
+	position: absolute;
+  	top: 50%; left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+  	background-color: #06A2AE;
+  	color: white;
+  	visibility: hidden;
+}
+#delete{
+	cursor: pointer;
+	width: 100px;
+	height: 100px;
+	border: red solid 2px;
+	border-radius: 50%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	background: #FF0000;
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+	box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5), 0 -1px 0 rgba( 255, 255, 255, 0.4);
+}
+#delete:hover{
+    background: #D60000;
+    background: linear-gradient(#FF4542, #D60000);
+    border-color: #D60000;
+}
+#delete a{
+	text-decoration: none;
+	color: black;
+	position: relative;
+	top: 40px;
+}
+#confirmSupp button{
+	text-align: right;
+}
+
+#ajouter{
+	width: 400px;
+	height: 60px;
+	text-align: center;
+	color: white;
+	margin-right: 0px;
+	margin-left: 120px;
+}
+#boutonChanger{
+	float: right;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+
+/*tooltip*/
+
+.tooltip {
+  position: relative;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 450px;
+  background-color: #FF9F97;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 103%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #FF9F97 transparent transparent;
+}
+
+
+.tooltipUp{
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	display: inline-block;
+}
+
+.tooltipUp .tooltiptextUp {
+  visibility: hidden;
+  width: 200px;
+  background-color: #FF9F97;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltipUp .tooltiptextUp::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -50px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #FF9F97 transparent;
+}
